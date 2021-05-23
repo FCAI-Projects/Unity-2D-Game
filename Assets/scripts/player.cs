@@ -46,10 +46,10 @@ public class player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, speed * Input.GetAxis("Vertical"));
         }
 
-        //if (border == true)
-        //{
-        //    transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY), transform.position.z);
-        //}
+        if (border == true)
+        {
+            transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
+        }
 
     }
 }
