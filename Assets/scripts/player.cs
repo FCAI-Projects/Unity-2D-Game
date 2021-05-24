@@ -5,19 +5,22 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     [SerializeField]
-    int speed = 1;
-    int addSpeed = 5;
+    int speed = 3;
+    [SerializeField]
+    int addSpeed = 8;
     Rigidbody2D rb;
+
+    public int playerHealth = 3;
 
     public GameObject Player;
 
-    public bool border;
+    //public bool border;
 
-    public float minX;
-    public float maxX;
+    //public float minX;
+    //public float maxX;
 
-    public float minY;
-    public float maxY;
+    //public float minY;
+    //public float maxY;
 
     // Start is called before the first frame update
     void Start()
@@ -46,10 +49,25 @@ public class player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, speed * Input.GetAxis("Vertical"));
         }
 
-        if (border == true)
+        //if (border == true)
+        //{
+        //    transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
+        //}
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
         {
-            transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
+            playerHealth = playerHealth - 1;
+            Debug.Log(playerHealth);
         }
 
+        if (playerHealth <= 0)
+        {
+            Debug.Log("you are died");
+            Destroy(Player);
+        }
     }
 }
