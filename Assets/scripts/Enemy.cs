@@ -9,8 +9,25 @@ public class Enemy : MonoBehaviour
     float hight = 3;
     [SerializeField]
     float speed = 3;
+    public int health = 40;
+    public GameObject deathAffect;
+    public Animator animator;
+    public void takeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            die();
+        }
+    }
 
-    // Start is called before the first frame update
+    void die()
+    {
+        print("die");
+        Destroy(gameObject);
+        
+
+    }
     void Start()
     {
         StartCoroutine(EnemyAnimation());

@@ -25,6 +25,11 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        move();
+    }
+
+    void move()
+    {
         rb.velocity = new Vector2(speed, 0);
 
         if (Input.GetKey(KeyCode.RightArrow))
@@ -45,6 +50,5 @@ public class player : MonoBehaviour
         {
             transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
         }
-
     }
 }
