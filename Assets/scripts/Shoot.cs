@@ -12,8 +12,7 @@ public class Shoot : MonoBehaviour
     {
         if(Input.GetKeyDown("space"))
         {
-            
-            StartCoroutine(ExampleCoroutine());
+            createShoot();
         }
     }
 
@@ -24,7 +23,6 @@ public class Shoot : MonoBehaviour
 
     IEnumerator ExampleCoroutine()
     {
-        //Print the time of when the function is first called.
         if (allowFire)
         {
             allowFire = false;
