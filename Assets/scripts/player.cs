@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class player : MonoBehaviour
     int addSpeed = 8;
     Rigidbody2D rb;
 
-    public bool border = true;
-    public float minX = 2f;
-    public float maxX = 65f;
-    public float minY = -4f;
-    public float maxY = 4f;
+    private bool border = true;
+    private float minX = 2f;
+    private float maxX = 100f;
+    private float minY = -4f;
+    private float maxY = 4f;
+
+    float t = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class player : MonoBehaviour
     void Update()
     {
         move();
+        IsWin();
     }
 
     void move()
@@ -49,6 +53,14 @@ public class player : MonoBehaviour
         if (border == true)
         {
             transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
+        }
+    }
+
+    void IsWin()
+    {
+        if (transform.position.x >= maxX)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }

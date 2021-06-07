@@ -296,6 +296,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.190331
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.7993712
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -368.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -157.7
+      objectReference: {fileID: 0}
     - target: {fileID: 8046485635847850110, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -324,6 +340,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8046485635883826083, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8046485636368069340, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -331,6 +351,14 @@ PrefabInstance:
     - target: {fileID: 8046485636368069340, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485636368069341, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485636368069341, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 54.2
       objectReference: {fileID: 0}
     - target: {fileID: 8046485636480494970, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_Pivot.x
@@ -415,6 +443,14 @@ PrefabInstance:
     - target: {fileID: 8046485636480494970, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485636480494971, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046485636480494973, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8046485636480494974, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_Name
