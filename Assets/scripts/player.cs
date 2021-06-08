@@ -51,6 +51,7 @@ public class player : MonoBehaviour
 
         if (border == true)
         {
+            Debug.Log(312);
             transform.position = new Vector2(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
         }
     }
@@ -59,7 +60,7 @@ public class player : MonoBehaviour
     {
         if (transform.position.x >= maxX)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
     }
 }

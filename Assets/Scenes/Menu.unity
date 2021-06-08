@@ -298,19 +298,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_LocalScale.x
-      value: 9.190331
+      value: 10.226552
       objectReference: {fileID: 0}
     - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.7993712
+      value: 6.706314
       objectReference: {fileID: 0}
     - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -335.7
+      value: -441.0258
       objectReference: {fileID: 0}
     - target: {fileID: 8046485635647475889, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -157.7
+      value: -162.8607
       objectReference: {fileID: 0}
     - target: {fileID: 8046485635847850110, guid: ee8cf8da1a2be5f4e924030bea04a7ac, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
