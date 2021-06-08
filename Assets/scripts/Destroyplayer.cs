@@ -27,11 +27,10 @@ public class Destroyplayer : MonoBehaviour
         {
             -- playerHealth;
             HealthText.text = playerHealth.ToString();
-            Debug.Log(playerHealth);
 
             if (playerHealth <= 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
                 Destroy(gameObject);
             }

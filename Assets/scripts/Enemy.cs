@@ -23,21 +23,13 @@ public class Enemy : MonoBehaviour
 
     void die()
     {
-        print("die");
         Destroy(gameObject);
-        
-
     }
+
     void Start()
     {
         StartCoroutine(EnemyAnimation());
         start = transform.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     IEnumerator EnemyAnimation()

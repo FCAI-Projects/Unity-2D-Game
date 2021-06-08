@@ -17,7 +17,6 @@ public class player : MonoBehaviour
     private float minY = -4f;
     private float maxY = 4f;
 
-    float t = 0;
 
     // Start is called before the first frame update
     void Start()
